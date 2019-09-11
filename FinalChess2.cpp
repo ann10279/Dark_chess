@@ -584,7 +584,6 @@ inline int getRight(int pos) {
 	return pos + 1; //0-7 => 0, 8-15 =>1, 16-23 => 2, 24-31 => 3 
 }
 
-//snow ?
 //下一手
 int makeMove(char currentBoard[32], ChessMove *amove) {
 
@@ -974,7 +973,7 @@ void printBoard(){
 
 	  cout <<"├───┼───┼───┼───┼───┼───┼───┼───┤"<<endl;
 	  cout <<"│  ";
-      SetColor(table_PieceColor[currentBoard[24]],0);
+          SetColor(table_PieceColor[currentBoard[24]],0);
 	  cout <<table_PieceName[currentBoard[24]];
 	  SetColor();
 	  cout <<" │  ";
@@ -1296,7 +1295,6 @@ int eval_Score(int Mastership, char currentBoard[32]) {
 	return 0;
 }
 
-//snow ?
 //解碼
 void Decoding(string code, ChessMove *amove) {
 
